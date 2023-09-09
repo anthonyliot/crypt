@@ -86,10 +86,10 @@ var Module = {
         var context = canvas.getContext('webgl');
     } catch(e){}
     if (!context) fail('WebGL');
-    // var s3tc = context.getExtension('WEBGL_compressed_texture_s3tc') ||
-    // context.getExtension('MOZ_WEBGL_compressed_texture_s3tc') ||
-    // context.getExtension('WEBKIT_WEBGL_compressed_texture_s3tc');
-    // if (!s3tc) fail('texture compression');
+    var s3tc = context.getExtension('WEBGL_compressed_texture_s3tc') ||
+    context.getExtension('MOZ_WEBGL_compressed_texture_s3tc') ||
+    context.getExtension('WEBKIT_WEBGL_compressed_texture_s3tc');
+    if (!s3tc) fail('texture compression');
     // var pointerLock = canvas['requestPointerLock'] ||
     //                     canvas['mozRequestPointerLock'] ||
     //                     canvas['webkitRequestPointerLock'];

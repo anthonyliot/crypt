@@ -10,4 +10,4 @@ This project was the achievement of month of work trying to run a 3D game engine
 You can try the demo <a href="https://anthonyliot.github.io/crypt/">here</a>
 
 <h2>Copyright</h2>
-This project is licensed under the terms of the MIT license and protected by Udacity Honor Code and Community Code of Conduct. See <a href="LICENSE">license</a>.
+This project is licensed under the terms of the MIT license. See <a href="LICENSE">license</a>.

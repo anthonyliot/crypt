@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en-us">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <head>
+        <title>3D Real-time Unigine Crypt demo | WebGL</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A 3D demo of unparalleled quality with no plugin">
+        <meta name="author" content="Anthony LIOT">
+        <meta name="keywords" content="Anthony LIOT,crypt,noplugin,3d real-time,3d planogram,3d visualization,unigine">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="gallery-fond">
+                <div id="gallery" class="screenshot hide">
+                    <div class="title">Crypt</div>
+                    <div id="slide-container" class="slideable">
+                        <div class="slide"><img src="assets/screenshots/00.png"></div>
+                        <div class="slide"><img id="late-image-0"></div>
+                        <div class="slide"><img id="late-image-1"></div>
+                        <div class="slide"><img id="late-image-2"></div>
+                        <div class="slide"><img id="late-image-3"></div>
+                        <div class="slide"><img id="late-image-4"></div>
+                        <div class="slide"><img id="late-image-5"></div>
+                        <div class="slide"><img id="late-image-6"></div>
+                        <div class="slide"><img id="late-image-7"></div>
+                        <div class="slide"><img id="late-image-8"></div>
+                        <div class="slide"><img id="late-image-9"></div>
+                        <div class="slide"><img id="late-image-10"></div>
+                        <div class="slide"><img id="late-image-11"></div>
+                        <div class="slide"><img id="late-image-12"></div>
+                    </div>
+                    <div id="slide-counter"></div>
+                </div>
+                <div class="section progress-area">
+                    <div class="status">
+                        <canvas id="canvas" class="canvas hide" oncontextmenu="event.preventDefault()"></canvas>
+                        <div class="status-content loading" id="status-content-loading">
+                            <div class="preview">
+                                <div class="preview-content low">
+                                    <div class="description">
+                                    </div>
+                                </div>
+                                <div class="level-title">Preparing<span></span></div>
+                            </div>
+                            <div class="progress-container">
+                                <span id="status-text">Downloading...</span>
+                                <progress value="0" max="100" id="progress"></progress>
+                            </div>
+                            <div class="status-content error hide">
+                                <span class="title">Oops!</span>
+                                <p>There was a problem starting the Crypt Demo. Please consult the <a href="game.html#troubleshooting">Known issues</a> section below for more information.</p>
+                                <p>Technical Details: <span class="details"></span></p>
+                            </div>
+                        </div>
+
+                        <div class="status-content ingame hide">
+                            <a class="fullscreen-button resume-low-res">Windowed</a>
+                            <a class="fullscreen-button resume-high-res">Fullscreen</a>
+                            <a class="fullscreen-button quit">Quit</a>
+                        </div>
+                        <div class="status-content fullscreen-buttons hide">
+                            <div class="resolution-message">Please select visualization mode:</div>
+                            <a class="fullscreen-button low-res">Windowed</a>
+                            <a class="fullscreen-button high-res">Fullscreen</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section gameplay" id="gameplay">
+                <div class="title">Instructions</div>
+                <p>
+               Press SPACE for pause the camera<br>
+               Press ENTER for switch to the next camera<br>
+               Press ESC for change settings
+                </p>
+            </div>
+            <br>
+            <hr color="gray">
+                        <div class="section" id="about">
+                <div class="title">About</div>
+                <p>
+                    You are about to see, for the first time a real-time 3D demonstration of unparalleled quality with no plugin.
+                    Simply using your browser, with no plugin required, you can take a look around this candle-lit Crypt developed by Unigine.
+                    The code, developed by <a href="http://fr.linkedin.com/in/liotanthony">Anthony Liot</a>, is written in JavaScript and uses WebGL. It can therefore be executed in all browsers which support WebGL.
+                </p>
+                <p>
+                <a href="http://unigine.com/">UNIGINE</a> is a real-time multi-platform 3D engine for games, simulation, visualization and virtual reality systems.
+                It is used in many projects, including benchmarks (<a href="http://unigine.com/products/heaven/">Heaven</a>, <a href="http://unigine.com/products/valley/">Valley</a> and others) and <a href="http://oilrush-game.com/">Oil Rush</a> naval strategy game.
+                </p>
+            </div>
+            <br>
+            <hr color="gray">
+            <div class="section" id="credits">
+                <div class="title">Credits</div>
+                <p>
+                    Adaptation of the Unigine engine into JavaScript and all related optimizations by <a href="http://fr.linkedin.com/in/liotanthony">Anthony Liot</a>.
+                </p>
+                <p>
+                    <a href="http://www.unigine.com" target="_blank">Unigine</a>: We would like to thank Unigine for the use of the Crypt demo and their support during the development.
+                </p>
+                <p>
+                    A special thanks is due for <a href="https://github.com/kripken/emscripten" target="_blank">Alon Zakai</a> in particular without whom the project would not have been possible.
+                </p>
+            </div>
+            <br>
+        </div>
+        <footer></footer>
+        <script src="js/game-setup.js"></script>
+    </body>
+</html>
+

@@ -1,5 +1,5 @@
 <div align="center"><img src="assets/screenshots/00.png"></div>
-<h1 align="center">CRYPT</h1>
+<h1 align="center"><a href="https://anthonyliot.github.io/crypt/">CRYPT</a></h1>
 <p align="center">
 <strong>Unigine to Javascript using Emscripten</strong>
 <br>2013

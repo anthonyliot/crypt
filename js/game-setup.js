@@ -83,17 +83,17 @@ var Module = {
     } catch(e){}
     if (!canvas) fail('canvas element');
     try {
-        var context = canvas.getContext('experimental-webgl');
+        var context = canvas.getContext('webgl');
     } catch(e){}
     if (!context) fail('WebGL');
-    var s3tc = context.getExtension('WEBGL_compressed_texture_s3tc') ||
-    context.getExtension('MOZ_WEBGL_compressed_texture_s3tc') ||
-    context.getExtension('WEBKIT_WEBGL_compressed_texture_s3tc');
-    if (!s3tc) fail('texture compression');
-/*var pointerLock = canvas['requestPointerLock'] ||
-                    canvas['mozRequestPointerLock'] ||
-                    canvas['webkitRequestPointerLock'];
-  if (!pointerLock) fail('pointer lock/mouse lock');*/
+    // var s3tc = context.getExtension('WEBGL_compressed_texture_s3tc') ||
+    // context.getExtension('MOZ_WEBGL_compressed_texture_s3tc') ||
+    // context.getExtension('WEBKIT_WEBGL_compressed_texture_s3tc');
+    // if (!s3tc) fail('texture compression');
+    // var pointerLock = canvas['requestPointerLock'] ||
+    //                     canvas['mozRequestPointerLock'] ||
+    //                     canvas['webkitRequestPointerLock'];
+    // if (!pointerLock) fail('pointer lock/mouse lock');
 })();
 
 // Hooks
